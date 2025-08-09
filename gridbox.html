@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            background-color: black;
+            padding-right: 50px;
+            padding-left: 20px;
+            column-gap: 10px;
+            row-gap: 10px;
+        display: grid;
+        grid-template-columns: 100px 1fr;
+        grid-template-areas: "container1 container1"
+        "container2 container3"
+        "container2 container4";
+        grid-template-rows: 100px 1fr 100px;
+        height: 700px;
+        padding: 0;
+        }
+    .container1{
+        background-color: red;
+        grid-area: container1;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+        z-index: 99;
+    }
+    .container1 div {
+        background-color: blue;
+        flex-wrap: wrap;
+
+    }
+    .container2{
+        background-color: yellow;
+        grid-area: container2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .container2 img{
+        width: 30px;
+        
+    }
+    .logo-container2{
+      width: 100px;
+      margin-top: 20px;
+      background-color: grey; 
+      cursor: pointer;
+       transition: 2s rgb(75, 16, 170);
+    }
+    .logo-container2:hover {
+        width: 105px;
+        
+
+    }
+    @media (max-width:800px) {
+        body
+        {grid-template-rows: auto auto 1fr 50px;
+            grid-template-columns: 1fr;
+            grid-template-areas: "container1"
+            "container2"
+            "container3"
+            "container4";
+            padding: 10px;
+            padding-left: 110px;
+           
+        }
+        .container1{
+            display: flex;
+            flex-direction: column;
+            width:100%;
+            background-color: green;
+        }
+      
+    }
+
+    .container3{
+        background-color: green;
+        grid-area: container3;
+        background-image: url(pictures/autumn-leaf-falling-revealing-intricate-leaf-vein-generated-by-ai.jpg);
+        background-size: cover;
+        background-position:center;
+        position: relative;
+        overflow: hidden;
+         align-content: center;
+        justify-content: center;
+       
+    }
+      .container4{
+        background-color: blue;
+        grid-area: container4;
+    }
+    .bubble-container{
+        width: 100%;
+        display: flex;
+        position: absolute;
+       bottom:-70px;
+         justify-content: space-around;
+         align-content: center;
+        
+    }
+    .bubble-container img{
+        width: 20px;
+        border-radius: 20px;
+        margin: 20px;
+         animation: bubble 4s ease-in infinite ;
+      
+       
+    }
+
+    
+    @keyframes bubble{
+        0%{
+            opacity: 0;
+            transform: translateY(0)
+        }
+        50%{
+            opacity: 1;
+           
+        }
+        70%{
+            opacity: 1;
+            
+        }
+        100%{
+            opacity: 0;
+            transform: translateY(-750px)
+        }
+    }
+    .bubble-container img:nth-child(1) {
+        animation-delay: 1s;
+         width: 10px;}
+     .bubble-container img:nth-child(2) {
+        animation-delay:2s;
+           width: 5px;}
+     .bubble-container img:nth-child(3) {
+        animation-delay:4.5;
+                 width: 7px;}
+    .bubble-container img:nth-child(4) {
+        animation-delay:3.5s;
+           width: 4px;}
+   .bubble-container img:nth-child(5) {
+        animation-delay: 2s;
+              width: 9px;}
+        .bubble-container img:nth-child(6) {
+        animation-delay: 3s;
+            width: 8px;}
+        .bubble-container img:nth-child(7) {
+        animation-delay: 1s;
+           width: 10px;}
+
+
+    </style>
+    <title>
+      gridbox practice  
+    </title>
+ <body>
+<div class="container1">
+    <div>left block</div>
+    <div> middle block</div>
+    <div> right block</div>
+   </div>
+<div class="container2">
+    <img src="pictures/channel-1.jpeg">
+      <img src="pictures/channel-2.jpeg">
+        <img src="pictures/channel-3.jpeg">
+<div class="logo-container2">
+</div>
+</div>
+<div class="container3">
+    <div class="bubble-container">
+<img src="pictures/montclair.png">
+<img src="pictures/montclair.png">
+<img src="pictures/montclair.png">
+<img src="pictures/montclair.png">
+<img src="pictures/montclair.png">
+<img src="pictures/montclair.png">
+<img src="pictures/montclair.png">
+    </div>
+</div>
+<div class="container4">
+    container4
+</div>
+ </body>   
+</head>
+</html>

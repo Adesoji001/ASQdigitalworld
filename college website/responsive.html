@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>responsive practice</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    gap: 20px;
+    background-color: green;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 200px 200px 100px;
+    grid-template-areas: "header header header"
+    "content1 content2 content3"
+    "content1 content2 content4"
+    "footer footer footer";
+}
+header{
+    grid-area: header;
+    background-color: red;
+    width:100%;
+}
+.content1{
+    grid-area: content1;
+    background-color: blue;
+}
+.content2{
+    background-color: greenyellow;
+    grid-area: content2;
+}
+.content3{
+    background-color: pink;
+    grid-area: content3;
+}
+.content4{
+    background-color: purple;
+    grid-area: content4;
+}
+footer{
+    background-color: aqua;
+    grid-area: footer;
+}
+@media(max-width:700px) {
+    .container{
+        gap: 20px;
+        width:100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 200px 200px 100px 100px 100px;
+        grid-template-areas: "header"
+        "content1"
+        "content2"
+        "content3"
+        "content4"
+        "footer";
+        
+    }
+}
+@media(max-width:600px) {
+    .container{
+        gap: 20px;
+        width:100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 400px 200px 500px;
+        grid-template-areas: "header header"
+        "content1 content2"
+        "content3 content4"
+        "footer footer";
+        
+    }
+}
+</style>
+</head>
+<body>
+   <div class="container">
+<header>
+    header
+</header>
+<div class="content1">
+   content1 
+</div>
+<div class="content2">
+content2
+</div>
+<div class="content3">
+content3
+</div>
+<div class="content4">
+content4
+</div>
+<footer>
+footer
+</footer>
+   </div>
+</body>
+</html>

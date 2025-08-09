@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <style>
+.general-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1fr 4fr 5fr;
+    grid-template-areas: "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content1 content2 content3"
+    "sidebar footer footer footer";
+   min-height: 700px;
+   text-align: center;
+   text-transform: capitalize;
+   grid-gap: 10px;
+   width: 100%;
+}
+main{
+    background-color: aqua;
+    grid-area: main;
+
+}
+#sidebar{
+    background-color: chocolate;
+    grid-area: sidebar;
+    display: grid;
+    position: sticky;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 4fr;
+    grid-template-areas: "one one"
+    "two three"
+    "four four";
+}
+#one{
+  background-color: yellowgreen;
+    grid-area: one;
+    text-align: middle;
+    min-height: 20px;
+    min-width: 100px
+    color: white;
+    display: grid;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: sticky;
+    background-position: center;
+    background-image: url(https://supersimple.dev/exercises/amazon/images/products/athletic-cotton-socks-6-pairs.jpg);
+}
+#two{
+    background-color: red;
+    grid-area: two;
+}
+#three{
+    background-color: green;
+    grid-area: three;
+}
+#four{
+    background-color: BLUE;
+    grid-area: four;
+}
+#content1{
+    background-color: rgb(122, 226, 24);
+    grid-area: content1;
+
+}
+#content2{
+    background-color: blueviolet;
+    grid-area: content2;
+
+}
+#content3{
+    background-color: brown;
+    grid-area: content3;
+
+}
+#footer{
+    background-color: rgb(212, 212, 114);
+    grid-area: footer;
+    height: auto;
+    padding-top: 50px;
+}
+#nav-container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width:1fr;
+background-color: aqua;
+}
+.right-container{
+    display: flex;
+    flex-direction: row;
+    background-color:rgb(155, 194, 164);
+    margin-right: 10px;
+    
+   
+
+    
+   
+}
+.middle-container{
+    background-color: rgb(102, 10, 102);
+    margin-right: 80px;
+}
+.left-container{
+    background-color: rgb(228, 217, 217);
+    width:200px
+    display: block; 
+    align-self: center;
+    margin: 40px;
+    
+}
+li{
+display: flex;
+flex-direction: row;
+color: blue;
+text-transform: uppercase;
+font-family: 'Franklin Gothic Medium', 
+'Arial Narrow', Arial, sans-serif;
+margin: 5px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+.signup-button{
+    cursor: pointer;
+color: aqua;
+background-color: black;
+display: inline-block;
+text-transform: uppercase;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', 
+Arial, sans-serif;
+padding: 5px;
+margin: 5px;
+}
+.login-button{
+ cursor: pointer;
+color: aqua;
+background-color: black;
+display: inline-block;
+text-transform: uppercase;
+font-family: 'Franklin Gothic Medium',
+ 'Arial Narrow',Arial, sans-serif;
+padding: 5px;
+margin: 5px;
+}
+.signup-button:hover{
+    transition: 0.5s;
+    color: green;
+    background-color: purple;
+}
+.login-button:hover{
+    transition: 0.5s;
+    color: green;
+    background-color: purple;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.search-box{
+color: red;
+background-color:rgb(230, 221, 221);
+outline: none;
+font-size: 20px;
+height: 25px;
+width: 500px;
+margin-bottom: 10px
+display: flex;
+align-items: center;
+border-radius: 80px;
+margin-right: 90px;
+    margin-left: 90px;
+  
+}
+.searchbox-container{
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    width: 500px;
+    border-radius:50px;
+    
+}
+.icon-container{
+    display: inline-block;
+    background-color: white;
+    margin: none;
+}
+</style>
+<title>
+    grid practice
+</title>
+    </head>
+    <body>
+<div class="general-container">  
+<div id="nav-container">  
+    <div class="left-container">
+    <img class="logo" src="pictures/montclair.png">
+    </div>
+    <div class="middle-container"> 
+        <div class="searchbox-container">
+            <input class="search-box" type="text" 
+            placeholder="search">
+        </div>
+       
+</div>
+    <div class="right-container">
+   <ul>
+    <li><a href="www.google.com"
+        target="_blank">home</a></li>
+    <li><a href="youtube.com">contact</a></li>
+    <li><a href="www.facebook.com"
+        target="_blank">exam</a></li>
+  <li><a href="youtube.com">Sign up</a></li>
+  <li><a href="youtube.com">Login</a></li>
+   </ul>
+    </div>
+</div>
+<main>
+    mainbar
+</main>
+<div id="sidebar">
+<div id="one">
+ one  
+</div>
+<div id="two">two</div>
+<div id="three">three</div>
+<div id="four">four</div>
+</div>
+<div id="content1">
+content1
+</div>
+<div id="content2">content2</div>
+<div id="content3">content3</div>
+<div id="footer">
+<footer>
+footer
+</footer>
+</div>
+</div>
+    </body>
+</html>

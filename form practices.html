@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="uref8">
+        <style>
+.header{
+    background-color: red;
+    border-style: solid;
+    border-radius: 20px;
+    display: grid;
+    height: 60px;
+}
+.footer{
+    background-color: red;
+    border-style: solid;
+    border-radius: 20px;
+    display: grid;
+    height: 60px;
+}
+.image{
+    width: 30px;
+    display: inline-block;
+}
+.search-button{
+    display: inline-block;
+    margin-top: 0px;
+    width: 200px;
+    margin-right: 5px;
+
+}
+.form-container{
+    border-style: solid;
+    border-color: red;
+    display: inline-block;
+    width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    vertical-align: center;
+    padding-top: 5px;
+    grid-template-columns: 1fr, 1fr, 1fr
+
+}
+.input-name{
+    display: inline-block
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+.label-name{
+    display: inline-block;
+    margin-left: 20px;
+    color: red;
+   
+}
+.label-container{
+    margin-left: 0px;
+    display: inline-block;
+    width: 100px; 
+    color: red;  
+}
+.surname-container{
+    margin-left: 20px;
+    color: red;
+}
+.fill-form{
+    text-align: center;
+    background-color: pink;
+    color: blue;
+    margin-top: 0px;
+}
+.picture-container{
+    display: grid;
+    margin-left:20px;
+    color: green;
+}
+.search-box{
+    display: inline-block;
+    margin-left: 20px;
+}
+.image-container{
+    width: 20px;
+    display: inline-block;
+    margin-left:0px;
+    vertical-align: top;
+    vertical-align: bottom;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.image-container:hover{
+    color: green;
+    background-color: blue;
+    transition: 2s
+}
+.image-container:active{
+    color: aqua;
+    background-color: red;
+}
+.submit-button{
+    display: inline-block;
+    color: red;
+    background-color: blue;
+    margin-top: 20px;
+    width: 200px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+        </style>
+        <title>
+            form practices
+        </title>
+    </head>
+    <body>
+        <ul>
+            <li>soji</li>
+            <li>ade</li>
+            <li>femi</li>
+            <li>dada</li>
+
+        </ul>
+        <ol>
+            <li>soji</li>
+            <li>ade</li>
+            <li>femi</li>
+            <li>dada</li> 
+        </ol>
+       <div> 
+        <form>
+            <div class="form-container">
+            <h1>
+            <p class="fill-form">
+            fill the form below
+            </p>
+            </h1>
+            <div class="label-container">
+                <label class="label-name">
+                    name
+                    <input class="input-name"
+                     type="text">
+                </label>
+                <div class="surname-container">
+                    <label>
+                        surname
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="picture-container">
+                    <label>
+                        picture
+                        <input type="file">
+                    </label>
+                    <button class="submit-button">
+                        submit
+                    </button>
+                </div>
+            </div>
+        </div>
+        </form>
+       </div>
+       <div>
+        <form>
+            <div class="form-container">
+            <h1>
+            <p class="fill-form">
+            fill the form below
+            </p>
+            </h1>
+            <div class="label-container">
+                <label class="label-name">
+                    name
+                    <input class="input-name"
+                     type="text">
+                </label>
+                <div class="surname-container">
+                    <label>
+                        surname
+                        <input type="text">
+                    </label>
+                </div>
+                <div class="picture-container">
+                    <label>
+                        picture
+                        <input type="file">
+                    </label>
+                    <button class="submit-button">
+                        submit
+                    </button>
+                </div>
+            </div>
+        </div>
+        </form>
+       </div>
+       
+               
+          <div class="search-box">
+            <input class="search-button" type="text" placeholder="search">
+           <div class="image-container">
+            <img class="image" 
+            src="assignment/montclair.png"> 
+           </div>
+          </div> 
+          <table>
+            <tr>
+                <th>
+                    table1
+                </th>
+                <th>
+                    table2
+                </th>
+                <th>
+                    table3
+                </th>
+                </tr>
+                <tr>
+                    <td>
+                        table1
+                    </td>
+                    <td>
+                        table2
+                    </td>
+                    <td>
+                        table3
+                    </td>
+                    </tr>
+          </table>
+        </body>
+</html>
