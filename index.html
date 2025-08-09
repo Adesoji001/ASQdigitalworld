@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="UI.css" >
+    <meta charset="UTF-8" />
+    <title>University of ibadan</title>
+</head>
+<body>
+ <section class="header">
+<nav>
+   <img class="menu-icon" onclick="showmenu()" src="college pictures/menu-icon.png">  
+  <div class="left-block">
+     <div class="logo-container">
+     <img src="college pictures/montclair.png">
+     </div>
+     <div class="tagline-container">
+MONTCLAIR COLLEGE
+     </div>
+    </div>  
+    <div class="right-block" id="rightblock">
+      <img class="close-icon" onclick="hidemenu()" src="college pictures/close-icon.png">
+    <ul>
+    <li><a href="index.html"> HOME</a></li>
+     <li><a>ABOUT</a></li>
+      <li><a>COURSE</a></li>
+       <li><a>BLOG</a></li>
+        <li><a>CONTACT</a></li>
+    </ul>   
+   </div>
+</nav>
+<div class="content-container">
+<h1>
+   World's Biggest university 
+</h1>
+</div>
+<p>
+Welcome to Montclair Group Of School.
+We believe that your<br> personal growth and development
+</p>
+<a href="index.html" target="_self">
+<div class="button-container">
+<button>
+   Visit us to Know more 
+</button>
+</div>
+</a>
+ </section> 
+ <section class="course-section">
+<div class="course-container">
+   <h1>Courses We Offer</h1>
+   <p>Below Are The Categories of courses we offer</p>
+</div>
+<div class="course-level-container">
+<div class="intermediate-container">
+<p><h3>Intermediate</h3></p>
+<p>We offer an Excellent courses from 
+   beginner to intermideiate that makes 
+   you stand out among others
+</p>
+</div>
+<div class="degree-container">
+<p><h3>Degree</h3></p>
+<p>We offer an Excellent courses from 
+   beginner to intermideiate that makes 
+   you stand out among others
+</p>
+</div>
+<div class="postgraduate-container">
+<p><h3>Post Graduation</h3></p>
+<p>We offer an Excellent courses from 
+   beginner to intermideiate that makes 
+   you stand out among others
+</p>
+</div>
+</div>
+</section>
+<section class="campus-section">
+   <h2>Our Global Campus</h2>
+   <p>we have branches in three diffrent locations</p>
+   <div class="campus-container">
+ <div class="london-container">
+  <div>LONDON</div> 
+   </div>
+   <div class="newyork-container">
+<div>Newyork</div>
+   </div>
+   <div class="washington-container">
+ <div>washington D.C.</div>
+   </div>
+   </div>
+</section>
+<script>
+   var rightblock = document.getElementById("rightblock");
+   function showmenu(){
+      rightblock.style.right="0px"
+   }
+    function hidemenu(){
+      rightblock.style.right="-100px"
+   }
+   
+
+</script>
+</body>
+</html>
